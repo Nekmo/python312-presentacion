@@ -35,6 +35,9 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Brush+Script);
 @import url(https://fonts.googleapis.com/css2?family=Allura&display=swap);
 
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 //@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css);
 
 @font-face {
@@ -43,6 +46,7 @@
   font-weight: 300;
   src: url("Flux Regular.otf") format('opentype');
 }
+
 
 //@font-face {
 //  font-family: 'Font Awesome 6 Free';
@@ -54,7 +58,7 @@
 
 // store colors in variables
 $hotPink: #2b5b84;
-$djangoColor: #0C4B33;
+$secondaryColor: #FFD538;
 $sunshine: $hotPink;
 // the color of the thick border surrounding the presention
 $borderColor: $hotPink;
@@ -231,6 +235,17 @@ ul li {
     padding: 15px;
 }
 
+/* Hidden titles */
+#python-3-13, #python-mas-rapido, #comparativa-velocidad {
+  h1, h2, h3 {
+    display: none;
+  }
+}
+
+/* hide image background in color slides */
+.slides section[data-background-color="#2b5b84"] img {
+  background: none;
+}
 
 #intro, #id2 {
     h1, h2 {
@@ -245,28 +260,85 @@ ul li {
     }
 }
 
-
-#sobre-mi {
-  h3 {
-    width: 40%;
-    font-size: 2.5em;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 100px;
-    text-align: right;
-    line-height: 0.5em;;
-
-    strong {
-      font-size: 0.3em;
-      color: $sunshine;
+#python-3-11  {
+    h2 {
+      color: $linkColor;
+      font-family: "Flux Regular";
+      text-transform: none;
+      font-size: 4em;
     }
+}
 
+#python-3-13 {
+  strong {
+    font-size: 12em;
   }
-  table {
-    width: 40%;
-    display: inline-block;
+}
+
+#sobre-mi-nekmo {
+    h2 {
+        width: 40%;
+        font-size: 2.5em;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 100px;
+        text-align: right;
+        line-height: 0.5em;;
+
+        strong {
+            font-size: 0.3em;
+            color: $secondaryColor;
+        }
+    }
+    table {
+        width: 40%;
+        display: inline-block;
+    }
+}
+
+#python-2-5 {
+  h3 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 5em;
+  }
+}
+
+#mas-rapido {
+  h3 {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 5em;
+    text-shadow: #000000 1px 0 10px;
+  }
+}
+
+#id3 {
+  h3 {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 4em;
+    text-shadow: #000000 1px 0 10px;
+  }
+}
+
+#listado-de-cambios {
+  strong {
+    color: $secondaryColor;
   }
 
+  ul {
+    li {
+      p {
+        margin: 5px 0;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+#gracias {
+  h3 {
+    font-size: 4em;
+    text-shadow: #000000 1px 0 10px;
+  }
 }
 
 #muchas-gracias-a-todos {

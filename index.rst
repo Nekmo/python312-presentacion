@@ -63,14 +63,11 @@ Python 3.11
 Python 3.13
 ===========
 
-.. revealjs-section::
-    :data-background-color: #ffffff
-    :data-background-image: _static/grid-bg.png
-    :data-background-repeat: repeat-x
-    :data-background-position: left top
-    :data-background-size: auto
-    :data-transition: zoom
+**?**
 
+.. revealjs-section::
+    :data-background-color: #000000
+    :data-background-gradient: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 80%)
 .. revealjs-notes::
 
     No sé si podéis adivinar sobre qué irá la charla del año que viene.
@@ -80,7 +77,11 @@ Python 3.13
 Sobre mí **Nekmo**
 ==================
 
-.. _sobre-mi:
+.. revealjs-section::
+    :data-transition: concave
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
+.. revealjs-notes::
 
 +------------------------------------+
 |                                    |
@@ -91,30 +92,17 @@ Sobre mí **Nekmo**
 |                                    |
 +------------------------------------+
 
-.. revealjs-section::
-    :data-transition: concave
-    :data-background-color: #fff5e7
-    :data-background-image: _static/pip-rating-white.svg
-    :data-background-repeat: no-repeat
-    :data-background-position: left bottom
-    :data-background-size: 600px 600px
-
-.. revealjs-notes::
-
   Pero bueno, dejad de que me presente. Soy Juan José, más conocido en redes como Nekmo, y llevo programando en
   Python más de media vida.
 
 
 
-Python **2.5**
---------------
+Python 2.5
+----------
 
 .. revealjs-section::
     :data-background-color: #ffffff
-    :data-background-image: _static/grid-bg.png
-    :data-background-repeat: repeat-x
-    :data-background-position: left top
-    :data-background-size: auto
+    :data-background-image: _static/vintage-bg.jpg
     :data-transition: zoom
 
 .. revealjs-notes::
@@ -144,12 +132,8 @@ Más rápido
 ----------
 
 .. revealjs-section::
-    :data-background-color: #ffffff
-    :data-background-image: _static/grid-bg.png
-    :data-background-repeat: repeat-x
-    :data-background-position: left top
-    :data-background-size: auto
-    :data-transition: zoom
+    :data-background-color: #000000
+    :data-background-image: _static/f1-bg.jpg
 
 .. revealjs-notes::
 
@@ -182,12 +166,8 @@ Python más rápido
 -------------
 
 .. revealjs-section::
-    :data-background-color: #ffffff
-    :data-background-image: _static/grid-bg.png
-    :data-background-repeat: repeat-x
-    :data-background-position: left top
-    :data-background-size: auto
-    :data-transition: zoom
+    :data-background-color: #000000
+    :data-background-image: _static/speed-bg.jpg
 
 .. revealjs-notes::
 
@@ -222,11 +202,16 @@ https://github.com/faster-cpython/benchmarking-public
 Listado  de cambios
 -------------------
 
+.. revealjs-section::
+    :data-transition: concave
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
+
 .. revealjs-fragments::
 
     * **PEP 701**: mejorado uso de comillas en f-strings.
-    * Mejoradas sugerencias "tal vez quisiste decir" en los mensajes de error.
-    * **PEP 695**: definir alias para tipos mediante "type".
+    * Mejoradas sugerencias *"tal vez quisiste decir"* en los mensajes de error.
+    * **PEP 695**: definir alias para tipos mediante *"type"*.
     * **PEP 692**: utilizar ``TypedDict`` para anotar los ``**kwargs``.
     * **PEP 698**: decorador ``@override`` para indicar métodos que sobrescriben.
     * **PEP 684**: implementar un GIL por cada sub-interprete.
@@ -243,6 +228,11 @@ Listado  de cambios
 
 Gracias
 -------
+
+.. revealjs-section::
+    :data-background-color: #000000
+    :data-background-video: _static/applause.mp4
+    :data-background-video-loop: true
 
 .. revealjs-notes::
 
@@ -724,6 +714,7 @@ Soporte para el profiler ``perf`` de Linux
     Y con esto terminamos. ¿Cuál es vuestra mejora favorita? Me gustaría poder escuchar vuestras opiniones.
 
 
+
 ¡Muchas gracias a todos!
 ========================
 
@@ -733,6 +724,8 @@ Soporte para el profiler ``perf`` de Linux
 .. revealjs-notes::
 
     ¡Muchas gracias a todos!
+
+
 
 **Contactar**
 -------------
