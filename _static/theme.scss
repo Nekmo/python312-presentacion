@@ -37,6 +37,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 //@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css);
 
@@ -236,7 +237,7 @@ ul li {
 }
 
 /* Hidden titles */
-#python-3-13, #python-mas-rapido, #comparativa-velocidad {
+#python-3-13, #python-mas-rapido, #comparativa-velocidad, #saltar-por-la-ventana {
   h1, h2, h3 {
     display: none;
   }
@@ -300,6 +301,7 @@ ul li {
   h3 {
     font-family: 'UnifrakturCook', cursive;
     font-size: 5em;
+    color: #312915;
   }
 }
 
@@ -341,6 +343,57 @@ ul li {
   }
 }
 
+#pep-701-mejorado-uso-de-comillas-en-f-strings {
+  h2 {
+    font-size: 2.5em;
+
+    strong {
+      color: $secondaryColor;
+    }
+
+    em {
+      display: block;
+      color: $secondaryColor;
+    }
+  }
+}
+
+#problema-con-las-comillas, #encadenar-f-strings-sin-limite, #uso-de-barra-invertida, #mejoras-en-mensajes-de-error {
+  strong, em {
+    color: $secondaryColor;
+  }
+}
+
+#mejoradas-sugerencias-tal-vez-quisiste-decir-en-los-mensajes-de-error {
+  h2 {
+    font-size: 2.3em;
+
+    em {
+      text-transform: none;
+      color: $secondaryColor;
+      font-family: 'Kalam', cursive;
+      font-size: 1.3em;
+    }
+  }
+}
+
+#nameerror-tal-vez-olvidaste-importar, #nameerror-tal-vez-olvidaste-usar-self,
+#sintaxerror-tal-vez-quisiste-usar-from-import, #importerror-no-se-pudo-importar-tal-vez-quisiste-decir {
+  h3 {
+    text-transform: none;
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+  }
+
+  strong, em {
+    color: $secondaryColor;
+  }
+
+  em {
+    font-family: 'Kalam', cursive;
+  }
+}
+
 #muchas-gracias-a-todos {
   h2 {
     color: white;
@@ -348,6 +401,53 @@ ul li {
   }
 }
 
+#sintaxerror-tal-vez-quisiste-usar-from-import {
+  em {
+    display: inline-block;
+  }
+}
+
+#typing {
+  h2 {
+    color: #ffffff;
+  }
+}
+
+#pep-695-definir-alias-para-tipos-mediante-type, #uso-de-genericos-en-type, #creacion-de-clases-genericas,
+#creacion-de-clases-genericas-antes, #creacion-de-funciones-genericas,
+#pep-692-utilizar-typeddict-para-anotar-los-kwargs, #pep-698-decorador-override-para-indicar-metodos-que-sobrescriben,
+#pep-684-implementar-un-gil-por-cada-sub-interprete, #pep-669-reducir-el-impacto-de-la-monitorizacion-en-cpython,
+#soporte-para-el-profiler-perf-de-linux, #pep-688-expuesto-el-protocolo-del-buffer-en-python,
+#pep-632-eliminado-paquete-distutils {
+  h2, h3 {
+    font-size: 2.5em;
+
+    code {
+      color: $hotPink;
+      display: inline-block;
+      background: $secondaryColor;
+      font-size: 1em;
+      line-height: 1em;
+      padding-bottom: 15px;
+      padding-right: 5px;
+
+      span {
+        font-family: monospace;
+      }
+    }
+  }
+
+  strong, em {
+    color: $secondaryColor;
+  }
+
+}
+
+#pep-698-decorador-override-para-indicar-metodos-que-sobrescriben {
+  h2 {
+    font-size: 2em;
+  }
+}
 
 div[data-background-hash="0linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);nullnullnullnull"] {
   	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -369,7 +469,20 @@ div[data-background-hash="0linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #2
 
 
 #contactar {
-  strong {
+  h2 {
     color: $sunshine;
   }
+
+  ul li {
+    list-style: none;
+
+    p {
+      font-size: 120%;
+
+      strong {
+        color:  $hotPink;
+      }
+    }
+  }
 }
+

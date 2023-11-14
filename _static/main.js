@@ -32,4 +32,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
         addLineDivs(starBg[i], "blue");
     }
 
+    // Map ids in "mejoras-en-mensajes-de-error" slide using data-id for slide auto-animate.
+    var section = document.getElementById("mejoras-en-mensajes-de-error");
+    var section2 = document.querySelector("[data-auto-animate-duration='1.1']");
+    var lines = section.querySelectorAll("tr");
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        if (i === 0 || i === 1) {
+            line.setAttribute("data-id", i + "a");
+        } else {
+            line.setAttribute("data-id", i);
+        }
+    }
+    var lines = section2.querySelectorAll("tr");
+    for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        if (i === 0 || i === 1) {
+            line.setAttribute("data-id", i + "b");
+        } else {
+            line.setAttribute("data-id", i);
+        }
+    }
 });

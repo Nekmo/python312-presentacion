@@ -81,7 +81,6 @@ Sobre mí **Nekmo**
     :data-transition: concave
     :data-background-color: #2b5b84
     :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
-.. revealjs-notes::
 
 +------------------------------------+
 |                                    |
@@ -91,6 +90,8 @@ Sobre mí **Nekmo**
 | *Programador Python*               |
 |                                    |
 +------------------------------------+
+
+.. revealjs-notes::
 
   Pero bueno, dejad de que me presente. Soy Juan José, más conocido en redes como Nekmo, y llevo programando en
   Python más de media vida.
@@ -241,8 +242,13 @@ Gracias
 
 
 
-**PEP 701**: mejorado uso de comillas en f-strings
-==================================================
+**PEP 701**: mejorado uso de comillas en *f-strings*
+====================================================
+
+.. revealjs-section::
+    :data-transition: concave
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -250,16 +256,19 @@ Gracias
     >>> f'Hello, {name}!'
     'Hello, World!'
 
-
-
 .. revealjs-notes::
 
    Para quienes no los conozcan, los f-strings son una forma de formatear cadenas de texto que se introdujo en Python
    3.6.
 
 
-Problema comillas
------------------
+Problema con las **comillas**
+-----------------------------
+
+.. revealjs-section::
+    :data-transition: concave
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -274,8 +283,13 @@ Problema comillas
    Python 3.12 este tipo de sintaxis es válida, lo cual antes nos daría un error.
 
 
-Encadenar f-strings sin límite
-------------------------------
+Encadenar *f-strings* sin límite
+--------------------------------
+
+.. revealjs-section::
+    :data-transition: concave
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -293,14 +307,25 @@ Encadenar f-strings sin límite
 Saltar por la ventana
 ---------------------
 
+.. revealjs-section::
+    :data-background-color: #000000
+    :data-background-video: _static/jump.mp4
+    :data-background-video-loop: true
+
+
 .. revealjs-notes::
 
     Querer saltar por la ventana. Pero ahora como poder podéis hacerlo, y no os dará un error de sintaxis.
 
 
 
-Uso de barra invertida
-----------------------
+Uso de **barra invertida**
+--------------------------
+
+.. revealjs-section::
+    :data-transition: concave
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -320,7 +345,14 @@ Uso de barra invertida
 Mejoras en mensajes de error
 ----------------------------
 
- .. revealjs-code-block:: pycon
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-auto-animate:
+    :data-auto-animate-duration: 1
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
+
+.. revealjs-code-block:: pycon
+   :data-line-numbers: 1-5
 
     >>> my_string = f"{x z y}" + f"{1 + 1}"
       File "<stdin>", line 1
@@ -336,10 +368,14 @@ Mejoras en mensajes de error
 
 
 
-Mejoras en mensajes de error 2
-------------------------------
+.. revealjs-break::
+    :data-auto-animate:
+    :data-auto-animate-duration: 1.1
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
- .. revealjs-code-block:: pycon
+.. revealjs-code-block:: pycon
+   :data-line-numbers: 1-5
 
     >>> my_string = f"{x z y}" + f"{1 + 1}"
       File "<stdin>", line 1
@@ -354,20 +390,29 @@ Mejoras en mensajes de error 2
 
 
 
-Mejoradas sugerencias "tal vez quisiste decir" en los mensajes de error
-=======================================================================
+Mejoradas sugerencias *"tal vez quisiste decir"* en los mensajes de error
+=========================================================================
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-notes::
 
    Pablo Galindo, uno de los principales desarrolladores de Python y compatriota, ha sido uno de los principales
    artífices en las mejoras de la accesibilidad de Python con los nuevos mensajes de error. En esta nueva versión
    no podía ser menos, y se han incluido un montón de nuevas sugerencias, las cuales vamos a ver muyyy rápido, ya que
-   son muchas.
+   son varias.
 
 
 
-NameError: tal vez olvidaste importar
--------------------------------------
+**NameError:** tal vez olvidaste importar
+-----------------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -382,8 +427,12 @@ NameError: tal vez olvidaste importar
    nombre con un módulo, nos sugerirá que quizás nos hayamos olvidado de importar ese módulo.
 
 
-NameError: tal vez olvidaste usar self
---------------------------------------
+**NameError:** tal vez olvidaste usar self
+------------------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -408,8 +457,12 @@ NameError: tal vez olvidaste usar self
 
 
 
-Sintax Error: tal vez quisiste usar "from ... import ..."?
-----------------------------------------------------------
+**SintaxError:** tal vez quisiste usar *"from ... import ..."*?
+---------------------------------------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
@@ -428,15 +481,20 @@ Sintax Error: tal vez quisiste usar "from ... import ..."?
 
 
 
-ImportError: No se pudo importar ..., ¿Tal vez quisiste decir ...?
-------------------------------------------------------------------
+**ImportError:** No se pudo importar ..., *¿Tal vez quisiste decir ...?*
+------------------------------------------------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: pycon
 
     >>> from collections import chainmap
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
-    ImportError: cannot import name 'chainmap' from 'collections'. Did you mean: 'ChainMap'?
+    ImportError: cannot import name 'chainmap' from 'collections'. Did you mean:
+    'ChainMap'?
 
 .. revealjs-notes::
 
@@ -446,11 +504,19 @@ ImportError: No se pudo importar ..., ¿Tal vez quisiste decir ...?
    proponer una nueva mascota para el intérprete**
 
 
-Nueva mascota
--------------
+Nueva **mascota**
+-----------------
+
+.. revealjs-section::
+    :data-background-color: #ffffff
+    :data-background-image: _static/grid-bg.png
+    :data-background-repeat: repeat-x
+    :data-background-position: left top
+    :data-background-size: auto
+    :data-transition: zoom
 
 .. image:: images/clippy.jpg
-   :width: 100%
+   :width: 50%
    :align: center
 
 .. revealjs-notes::
@@ -461,6 +527,9 @@ Nueva mascota
 
 Typing
 ======
+
+.. revealjs-section::
+    :data-background-color: #FE7E75
 
 .. image:: images/typing.*
    :width: 100%
@@ -475,8 +544,12 @@ Typing
 
 
 
-**PEP 695**: definir alias para tipos mediante "type"
-====================================================
+**PEP 695**: definir alias para tipos mediante ``type``
+=======================================================
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
 
@@ -488,8 +561,12 @@ Typing
 
 
 
-Uso de genéricos en type
-------------------------
+Uso de genéricos en ``type``
+----------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
 
@@ -503,8 +580,12 @@ Uso de genéricos en type
 
 
 
-Creación de clases genéricas
-----------------------------
+Creación de clases **genéricas**
+--------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
 
@@ -522,8 +603,12 @@ Creación de clases genéricas
 
 
 
-Creación de clases genéricas antes
-----------------------------------
+Creación de clases **genéricas antes**
+--------------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
 
@@ -545,8 +630,12 @@ Creación de clases genéricas antes
 
 
 
-Creación de funciones genéricas
--------------------------------
+Creación de funciones **genéricas**
+-----------------------------------
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
 
@@ -560,7 +649,11 @@ Creación de funciones genéricas
 
 
 **PEP 692**: utilizar ``TypedDict`` para anotar los ``**kwargs``
-===============================================================
+================================================================
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
     :data-line-numbers: 1-8|7-8|7|3-5
@@ -585,6 +678,10 @@ Creación de funciones genéricas
 
 **PEP 698**: decorador ``@override`` para indicar métodos que sobrescriben
 ==========================================================================
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
     :data-line-numbers: 1-15|4-5|8-10|13-15
@@ -614,8 +711,16 @@ Creación de funciones genéricas
 
 
 
-Otras mejoras
-=============
+Otras **mejoras**
+=================
+
+.. revealjs-section::
+    :data-background-color: #ffffff
+    :data-background-image: _static/grid-bg.png
+    :data-background-repeat: repeat-x
+    :data-background-position: left top
+    :data-background-size: auto
+    :data-transition: zoom
 
 .. revealjs-notes::
 
@@ -624,8 +729,12 @@ Otras mejoras
 
 
 
-**PEP 684**: implementar un GIL por cada sub-interprete
-=======================================================
+**PEP 684**: implementar un **GIL** por cada **sub-interprete**
+===============================================================
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-notes::
 
@@ -635,8 +744,12 @@ Otras mejoras
 
 
 
-**PEP 669**: Reducir el impacto de la monitorización en CPython
-===============================================================
+**PEP 669**: Reducir el impacto de la **monitorización** en **CPython**
+=======================================================================
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-notes::
 
@@ -648,6 +761,10 @@ Otras mejoras
 
 Soporte para el profiler ``perf`` de Linux
 ==========================================
+
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. code-block:: bash
 
@@ -665,23 +782,26 @@ Soporte para el profiler ``perf`` de Linux
 
 
 
-**PEP 688**: Expuesto el protocolo del buffer en Python
-=======================================================
+**PEP 688**: Expuesto el protocolo del **buffer** en Python
+===========================================================
 
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
-.. code-block:: python
-    :data-line-numbers: 1-10|6-7|9-10
+.. revealjs-code-block:: python
+   :data-line-numbers: 1-10|6-7|9-10
 
     class MyBuffer:
-    def __init__(self, data: bytes):
-        self.data = bytearray(data)
-        self.view = None
+        def __init__(self, data: bytes):
+            self.data = bytearray(data)
+            self.view = None
 
-    def __buffer__(self, flags: int) -> memoryview:
-        ...
+        def __buffer__(self, flags: int) -> memoryview:
+            ...
 
-    def __release_buffer__(self, view: memoryview) -> None:
-        ...
+        def __release_buffer__(self, view: memoryview) -> None:
+            ...
 
 
 .. revealjs-notes::
@@ -697,6 +817,10 @@ Soporte para el profiler ``perf`` de Linux
 **PEP 632**: eliminado paquete ``distutils``
 ============================================
 
+.. revealjs-section::
+    :data-background-color: #2b5b84
+    :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
+
 .. revealjs-notes::
 
     Y para terminar, tenemos que decir adiós a ``distutils``, un módulo que llevaba con nosotros desde tiempos
@@ -706,8 +830,16 @@ Soporte para el profiler ``perf`` de Linux
 
 
 
-¿Cuál es vuestra mejora favorita?
-=================================
+¿Cuál es vuestra **mejora favorita**?
+=====================================
+
+.. revealjs-section::
+    :data-background-color: #ffffff
+    :data-background-image: _static/grid-bg.png
+    :data-background-repeat: repeat-x
+    :data-background-position: left top
+    :data-background-size: auto
+    :data-transition: zoom
 
 .. revealjs-notes::
 
@@ -731,12 +863,12 @@ Soporte para el profiler ``perf`` de Linux
 -------------
 
 .. revealjs-section::
+    :data-background-color: #ffffff
+    :data-background-image: _static/grid-bg.png
+    :data-background-repeat: repeat-x
+    :data-background-position: left top
+    :data-background-size: auto
     :data-transition: zoom
-    :data-background-color: #fff5e7
-    :data-background-image: _static/pip-rating-white.svg
-    :data-background-repeat: no-repeat
-    :data-background-position: left bottom
-    :data-background-size: 600px 600px
 
 * 🌐 **Sitio web:** `nekmo.com <https://nekmo.com>`_
 * 📫 **Email:** `contacto@nekmo.com <mailto:contacto@nekmo.com>`_
