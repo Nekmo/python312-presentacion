@@ -1,30 +1,31 @@
-.. image:: https://raw.githubusercontent.com/Nekmo/pip-rating-presentacion/master/logo.png
+.. image:: https://raw.githubusercontent.com/Nekmo/python312-presentacion/master/logo.png
     :width: 100%
 
 |
 
-.. image:: https://img.shields.io/github/actions/workflow/status/Nekmo/pip-rating-presentacion/build.yml?style=flat-square&maxAge=2592000&branch=master
-  :target: https://github.com/Nekmo/pip-rating-presentacion/actions?query=workflow%3ABuild
+.. image:: https://img.shields.io/github/workflow/status/Nekmo/python312-presentacion/Build.svg?style=flat-square&maxAge=2592000
+  :target: https://github.com/Nekmo/python312-presentacion/actions?query=workflow%3ABuild
   :alt: Latest CI build status
 
 
-=======================
-Presentación pip-rating
-=======================
+=================================
+¿Qué hay de nuevo en Python 3.12?
+=================================
 
-Presentación para `PyConES 2023 <https://2023.es.pycon.org/>`_. Puedes utilizar esta misma presentación, íntegra o
-con modificaciones para cualquiera de los usos descritos en la licencia MIT adjunta en este proyecto.
+Presentación para `Python Málaga <https://www.meetup.com/es-ES/python_malaga/>`_ el día 27 de octubre 2022. Puedes
+utilizar esta misma presentación, íntegra o con modificaciones para cualquiera de los usos descritos en la licencia
+MIT adjunta en este proyecto.
 
-La presentación está `disponible online <https://nekmo.github.io/pip-rating-presentacion/>`_ ya compilada
+La presentación está `disponible online <https://nekmo.github.io/python312-presentacion/>`_ ya compilada
 para su visualización.
 
-Para compilar desde el código fuente se requiere Python 3 instalado, estando probado sólo bajo Python 3.11. Se
+Para compilar desde el código fuente se requiere Python 3 instalado, estando probado sólo bajo Python 3.9. Se
 recomienda ejecutar los siguientes pasos en un
 `virtualenv <https://nekmo.com/es/blog/python-virtualenvs-y-virtualenvwrapper/>`_::
 
     # Clonar proyecto
-    git clone https://github.com/Nekmo/pip-rating-presentacion.git
-    cd pip-rating-presentacion
+    git clone https://github.com/Nekmo/python312-presentacion.git
+    cd python312-presentacion
     # Instalar dependencias
     pip install -r requirements.txt
     # Compilar ficheros de estilos
@@ -34,8 +35,10 @@ recomienda ejecutar los siguientes pasos en un
 
 Tras la compilación puede verse los ficheros resultantes en el directorio ``_build``.
 
+
 Copyright
 =========
 Licencia MIT. Ver fichero ``LICENSE.txt``.
 
-Nekmo 2023.
+Nekmo 2022.
+
