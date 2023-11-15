@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <title>¿Qué hay de nuevo en Python 3.12?</title>
+    <link rel="stylesheet" type="text/css" href="_static/revealjs4/dist/reveal.css" />
+    <link rel="stylesheet" href="_static/revealjs4/dist/theme/.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme.css" />
+    <script src="_static/main.js"></script>
+    <link rel="next" title="¿Qué hay de nuevo en Python 3.12?" href="README.html" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  </head><body>
+    <div class="reveal">
+        <div class="slides" role="main">
+            <div class="toctree-wrapper compound">
+</div>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="intro">
+<h1>¿Qué hay de nuevo en <strong>Python 3.12</strong>?</h1>
+<a class="reference internal image-reference" href="_images/python-logo.png"><img alt="_images/python-logo.png" src="_images/python-logo.png" style="width: 200px;" /></a>
+<aside class="notes">Hola a todos.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="id1">
+<h2>👋</h2>
+<aside class="notes">Tal vez algunos me reconozcáis de la charla que di el año pasado aquí mismo</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="python-3-11">
+<h2>Python 3.11</h2>
+<aside class="notes">Sobre Python 3.11. Parece que se está convirtiendo en una tradición.</aside></section>
+<section data-background-color="#000000" data-background-gradient="radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 80%)" id="python-3-13">
+<h2>Python 3.13</h2>
+<p><strong>?</strong></p>
+<aside class="notes">No sé si podéis adivinar sobre qué irá la charla del año que viene.</aside></section>
+<section>
+<section data-transition="concave" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="sobre-mi-nekmo">
+<h2>Sobre mí <strong>Nekmo</strong></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="_images/cara.svg"><img alt="_images/cara.svg" src="_images/cara.svg" width="200px" /></a>
+<p><em>Programador Python</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">Pero bueno, dejad de que me presente. Soy Juan José, más conocido en redes como Nekmo, y llevo programando en
+Python más de media vida.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/vintage-bg.jpg" data-transition="zoom" id="python-2-5">
+<h3>Python 2.5</h3>
+<aside class="notes">Mi primera versión de Python fue la 2.5. Han pasado ya muchos años, y con cada nueva versión no
+dejan de traer novedades.</aside></section>
+</section>
+<section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="id2">
+<h2>¿Qué hay de nuevo en <strong>Python 3.12</strong>?</h2>
+<aside class="notes">Y ahora, ¿qué hay de nuevo en Python 3.12?</aside></section>
+<section data-background-color="#000000" data-background-image="_static/f1-bg.jpg" id="mas-rapido">
+<h3>Más rápido</h3>
+<aside class="notes">Vayamos a lo primero, a lo que más suele gustar. Los datos, los números, cómo de rápido es Python 3.12.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="python-mas-rapido">
+<h3>Python más rápido</h3>
+<a class="reference internal image-reference" href="_images/does-python-run-faster-than-c.png"><img alt="_images/does-python-run-faster-than-c.png" src="_images/does-python-run-faster-than-c.png" style="width: 100%;" /></a>
+<aside class="notes">Toda esta locura por la velocidad viene ya desde hace unas cuantas versiones, y al ritmo que llevábamos, íbamos
+a superar a C++ dentro de poco, ¡imaginad la locura!</aside></section>
+<section data-background-color="#000000" data-background-image="_static/speed-bg.jpg" id="id3">
+<h3>7% más rápido</h3>
+<aside class="notes">Pero no. Claramente no se podía mantener ese ritmo. Pero en Python 3.12 tenemos un 7% más de velocidad, que
+sigue estando bastante bien.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="comparativa-velocidad">
+<h3>Comparativa velocidad</h3>
+<a class="reference internal image-reference" href="_images/python312-performance.png"><img alt="_images/python312-performance.png" src="_images/python312-performance.png" style="width: 100%;" /></a>
+<p><a class="reference external" href="https://github.com/faster-cpython/benchmarking-public">https://github.com/faster-cpython/benchmarking-public</a></p>
+<aside class="notes">Tenéis todos los datos en el enlace en pantalla. Y no, me temo que no puedo responder qué pasó con la versión de
+Windows para que subiese tanto.</aside></section>
+<section data-transition="concave" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="listado-de-cambios">
+<h3>Listado  de cambios</h3>
+<ul class="simple">
+<li class="fragment"><p><strong>PEP 701</strong>: mejorado uso de comillas en f-strings.</p></li>
+<li class="fragment"><p>Mejoradas sugerencias <em>&quot;tal vez quisiste decir&quot;</em> en los mensajes de error.</p></li>
+<li class="fragment"><p><strong>PEP 695</strong>: definir alias para tipos mediante <em>&quot;type&quot;</em>.</p></li>
+<li class="fragment"><p><strong>PEP 692</strong>: utilizar <code class="docutils literal notranslate"><span class="pre">TypedDict</span></code> para anotar los <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>.</p></li>
+<li class="fragment"><p><strong>PEP 698</strong>: decorador <code class="docutils literal notranslate"><span class="pre">&#64;override</span></code> para indicar métodos que sobrescriben.</p></li>
+<li class="fragment"><p><strong>PEP 684</strong>: implementar un GIL por cada sub-interprete.</p></li>
+<li class="fragment"><p><strong>PEP 669</strong>: Reducir el impacto de la monitorización en CPython.</p></li>
+<li class="fragment"><p>Soporte para el profiler <code class="docutils literal notranslate"><span class="pre">perf</span></code> de Linux.</p></li>
+<li class="fragment"><p><strong>PEP 688</strong>: Expuesto el protocolo del buffer en Python.</p></li>
+<li class="fragment"><p><strong>PEP 632</strong>: eliminado paquete <code class="docutils literal notranslate"><span class="pre">distutils</span></code>.</p></li>
+</ul>
+<aside class="notes">Pero no todo es velocidad. Vamos a hablar de los cambios que trae esta nueva versión de Python.</aside></section>
+<section data-background-color="#000000" data-background-video="_static/applause.mp4" data-background-video-loop="true" id="gracias">
+<h3>Gracias</h3>
+<aside class="notes">Y hasta aquí la charla. Muchas gracias a todos por venir. (PAUSA) Bueno, este es el segundo año que hago esta broma,
+pero tenía que mantener la tradición. No os preocupéis, que voy a ahondar en cada uno de estos cambios.</aside></section>
+</section>
+<section>
+<section data-transition="concave" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-701-mejorado-uso-de-comillas-en-f-strings">
+<h2><strong>PEP 701</strong>: mejorado uso de comillas en <em>f-strings</em></h2>
+<pre data-id="pep-701-mejorado-uso-de-comillas-en-f-strings"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; name = 'World'
+&gt;&gt;&gt; f'Hello, {name}!'
+'Hello, World!'</code></pre>
+<aside class="notes">Para quienes no los conozcan, los f-strings son una forma de formatear cadenas de texto que se introdujo en Python
+3.6.</aside></section>
+<section data-transition="concave" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="problema-con-las-comillas">
+<h3>Problema con las <strong>comillas</strong></h3>
+<pre data-id="problema-con-las-comillas"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; songs = ['Take me back to Eden', 'Alkaline', 'Ascensionism']
+&gt;&gt;&gt; f&quot;This is the playlist: {&quot;, &quot;.join(songs)}&quot;
+'This is the playlist: Take me back to Eden, Alkaline, Ascensionism'</code></pre>
+<aside class="notes">Hasta ahora, si queríamos utilizar comillas dentro de un f-string, teníamos que usar comillas simples o dobles
+dependiendo de cómo estuviese definido el f-string, ya que si no, se producía un error de sintaxis. Ahora en
+Python 3.12 este tipo de sintaxis es válida, lo cual antes nos daría un error.</aside></section>
+<section data-transition="concave" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="encadenar-f-strings-sin-limite">
+<h3>Encadenar <em>f-strings</em> sin límite</h3>
+<pre data-id="encadenar-f-strings-sin-limite"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; f&quot;{f&quot;{f&quot;{f&quot;{f&quot;{f&quot;{1+1}&quot;}&quot;}&quot;}&quot;}&quot;}&quot;
+'2'</code></pre>
+<aside class="notes">Otra de las ventajas de la nueva implementación es que ahora podemos encadenar f-strings sin límite, ya que antes
+estaba limitado por las diferentes combinaciones que podíamos hacer de las comillas. Igualmente, también os digo,
+que podáis hacerlo no significa que debáis hacerlo. Yo fue ver este ejemplo en la documentación oficial y...</aside></section>
+<section data-background-color="#000000" data-background-video="_static/jump.mp4" data-background-video-loop="true" id="saltar-por-la-ventana">
+<h3>Saltar por la ventana</h3>
+<aside class="notes">Querer saltar por la ventana. Pero ahora como poder podéis hacerlo, y no os dará un error de sintaxis.</aside></section>
+<section data-transition="concave" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="uso-de-barra-invertida">
+<h3>Uso de <strong>barra invertida</strong></h3>
+<pre data-id="uso-de-barra-invertida"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; songs = ['Take me back to Eden', 'Alkaline', 'Ascensionism']
+&gt;&gt;&gt; print(f&quot;This is the playlist: {&quot;\n&quot;.join(songs)}&quot;)
+This is the playlist: Take me back to Eden
+Alkaline
+Ascensionism</code></pre>
+<aside class="notes">Pero sin duda de lo que me ha parecido más interesante es que ahora podemos utilizar la barra invertida dentro de
+las sustituciones del f-string. En versiones anteriores, este mismo ejemplo nos daría un error de sintaxis.</aside></section>
+<section data-background-color="#2b5b84" data-auto-animate data-auto-animate-duration="1" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="mejoras-en-mensajes-de-error">
+<h3>Mejoras en mensajes de error</h3>
+<pre data-id="mejoras-en-mensajes-de-error"><code data-trim data-noescape class="pycon" data-line-numbers="1-5"> &gt;&gt;&gt; my_string = f&quot;{x z y}&quot; + f&quot;{1 + 1}&quot;
+   File &quot;&lt;stdin&gt;&quot;, line 1
+     (x z y)
+      ^^^
+ SyntaxError: f-string: invalid syntax. Perhaps you forgot a comma?</code></pre>
+<aside class="notes">Pero la nueva implementación no sólo ha permitido hacer nuevas cosas. También ha mejorado los mensajes de error.
+En este mensaje de error de Python 3.11, aunque se nos indicaba que había un error de sintaxis, no quedaba claro
+dónde del string estaba ocurriendo.</aside></section>
+<section data-auto-animate data-auto-animate-duration="1.1" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)">
+<h3>Mejoras en mensajes de error</h3>
+<pre data-id="mejoras-en-mensajes-de-error"><code data-trim data-noescape class="pycon" data-line-numbers="1-5"> &gt;&gt;&gt; my_string = f&quot;{x z y}&quot; + f&quot;{1 + 1}&quot;
+   File &quot;&lt;stdin&gt;&quot;, line 1
+     my_string = f&quot;{x z y}&quot; + f&quot;{1 + 1}&quot;
+                    ^^^
+ SyntaxError: invalid syntax. Perhaps you forgot a comma?</code></pre>
+<aside class="notes">Pero ahora como podéis ver en Python 3.12, se nos indica exactamente dónde está ocurriendo el error en el string.
+Pero esta no es la única mejora que ha habido en los mensajes de error, y vamos a verlo en el siguiente punto.</aside></section>
+</section>
+<section>
+<section data-transition="slide" data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="mejoradas-sugerencias-tal-vez-quisiste-decir-en-los-mensajes-de-error">
+<h2>Mejoradas sugerencias <em>&quot;tal vez quisiste decir&quot;</em> en los mensajes de error</h2>
+<aside class="notes">Pablo Galindo, uno de los principales desarrolladores de Python y compatriota, ha sido uno de los principales
+artífices en las mejoras de la accesibilidad de Python con los nuevos mensajes de error. En esta nueva versión
+no podía ser menos, y se han incluido un montón de nuevas sugerencias, las cuales vamos a ver muyyy rápido, ya que
+son varias.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="nameerror-tal-vez-olvidaste-importar">
+<h3><strong>NameError:</strong> tal vez olvidaste importar</h3>
+<pre data-id="nameerror-tal-vez-olvidaste-importar"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; sys.version_info
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?</code></pre>
+<aside class="notes">Ahora, si no hemos dormido bien esa noche e intentamos utilizar una variable que no está definida y coincide en
+nombre con un módulo, nos sugerirá que quizás nos hayamos olvidado de importar ese módulo.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="nameerror-tal-vez-olvidaste-usar-self">
+<h3><strong>NameError:</strong> tal vez olvidaste usar self</h3>
+<pre data-id="nameerror-tal-vez-olvidaste-usar-self"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; class A:
+...     def __init__(self):
+...         self.blech = 1
+...
+...     def foo(self):
+...         somethin = blech
+...
+&gt;&gt;&gt; A().foo()
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    somethin = blech
+               ^^^^^
+NameError: name 'blech' is not defined. Did you mean: 'self.blech'?</code></pre>
+<aside class="notes">También nos puede suceder que si estamos cansados y se nos olvida poner &quot;self&quot; en un método, nos sugerirá que
+quizás nos hayamos olvidado de ponerlo.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="sintaxerror-tal-vez-quisiste-usar-from-import">
+<h3><strong>SintaxError:</strong> tal vez quisiste usar <em>&quot;from ... import ...&quot;</em>?</h3>
+<pre data-id="sintaxerror-tal-vez-quisiste-usar-from-import"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; import a.y.z from b.y.z
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    import a.y.z from b.y.z
+    ^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: Did you mean to use 'from ... import ...' instead?</code></pre>
+<aside class="notes">Vale, ahora levantad la mano quienes programéis en Javascript o Typescript y hayáis usado módulos. ¿Os habéis fijado
+que en Python la forma de importar módulos es al revés? Eso alguna vez me ha provocado este tipo de error de
+sintaxis, la cual ahora nos avisará con un error de sintaxis con la forma correcta.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="importerror-no-se-pudo-importar-tal-vez-quisiste-decir">
+<h3><strong>ImportError:</strong> No se pudo importar ..., <em>¿Tal vez quisiste decir ...?</em></h3>
+<pre data-id="importerror-no-se-pudo-importar-tal-vez-quisiste-decir"><code data-trim data-noescape class="pycon">&gt;&gt;&gt; from collections import chainmap
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ImportError: cannot import name 'chainmap' from 'collections'. Did you mean:
+'ChainMap'?</code></pre>
+<aside class="notes">Finalmente, otra sugerencia para esos días que estamos despistados, y tenemos un fallo escribiendo el nombre
+de aquello que estamos importando. Ahora, si hay un nombre similar en la importación, nos hará una sugerencia.
+La verdad es que es genial contar con tantas sugerencias, y es por ello, que más que una pitón, he querido
+proponer una nueva mascota para el intérprete</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="nueva-mascota">
+<h3>Nueva <strong>mascota</strong></h3>
+<a class="reference internal image-reference" href="_images/clippy.jpg"><img alt="_images/clippy.jpg" class="align-center" src="_images/clippy.jpg" style="width: 50%;" /></a>
+<aside class="notes">¡Clipo! Seguro que así los tracebacks serán mejor vistos y aceptados.</aside></section>
+</section>
+<section data-background-color="#FE7E75" id="typing">
+<h2>Typing</h2>
+<a class="reference internal image-reference" href="_images/typing.png"><img alt="_images/typing.png" class="align-center" src="_images/typing.png" style="width: 100%;" /></a>
+<aside class="notes">Y ahora vamos a hablar de las mejoras realizadas en el typing. Aunque Python no sea un lenguaje fuertemente tipado,
+el typing ha llegado para quedarse. ¿Cuántos de vosotros lo utilizáis en vuestros proyectos? ¿Podéis levantar la
+mano?</aside></section>
+<section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-695-definir-alias-para-tipos-mediante-type">
+<h2><strong>PEP 695</strong>: definir alias para tipos mediante <code class="docutils literal notranslate"><span class="pre">type</span></code></h2>
+<pre data-id="pep-695-definir-alias-para-tipos-mediante-type"><code data-trim data-noescape class="python">type Point = tuple[float, float]</code></pre>
+<aside class="notes">La primera de las mejoras en el tipado es la posibilidad de definir alias para tipos mediante &quot;type&quot;.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="uso-de-genericos-en-type">
+<h3>Uso de genéricos en <code class="docutils literal notranslate"><span class="pre">type</span></code></h3>
+<pre data-id="uso-de-genericos-en-type"><code data-trim data-noescape class="python">type Point[T] = tuple[T, T]</code></pre>
+<aside class="notes">También podemos utilizar genéricos en el type, sin necesidad de definirlos previamente, mediante esta nueva
+sintaxis. En este caso, en vez de definirse que los elementos de la tupla deben ser floats, ahora es genérico,
+pudiendo ser cualquier tipo.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="creacion-de-clases-genericas">
+<h3>Creación de clases <strong>genéricas</strong></h3>
+<pre data-id="creacion-de-clases-genericas"><code data-trim data-noescape class="python">class list[T]:
+    def __getitem__(self, index: int, /) -&gt; T:
+        ...
+
+    def append(self, element: T) -&gt; None:
+        ...</code></pre>
+<aside class="notes">Esta nueva forma de sintaxis para definir genéricos también puede utilizarse para definir clases genéricas, siendo
+ahora mucho más sencillo.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="creacion-de-clases-genericas-antes">
+<h3>Creación de clases <strong>genéricas antes</strong></h3>
+<pre data-id="creacion-de-clases-genericas-antes"><code data-trim data-noescape class="python">from typing import TypeVar, Generic
+
+T = TypeVar(&quot;T&quot;)
+
+class list(Generic[T]):
+    def __getitem__(self, index: int, /) -&gt; T:
+        ...
+
+    def append(self, element: T) -&gt; None:
+        ...</code></pre>
+<aside class="notes">A modo de ejemplo, podéis ver cómo se definía antes una clase genérica, teniendo que importar TypeVar y Generic,
+y definir el tipo genérico antes de la clase.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="creacion-de-funciones-genericas">
+<h3>Creación de funciones <strong>genéricas</strong></h3>
+<pre data-id="creacion-de-funciones-genericas"><code data-trim data-noescape class="python">def max[T](args: Iterable[T]) -&gt; T:
+    ...</code></pre>
+<aside class="notes">Por supuesto, esta mejora también ha llegado a la creación de las funciones genéricas.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="genericos-facil">
+<h3>Genéricos fácil</h3>
+<a class="reference internal image-reference" href="_images/too-easy.gif"><img alt="_images/too-easy.gif" class="align-center" src="_images/too-easy.gif" style="width: 80%;" /></a>
+<aside class="notes">Como podéis ver, gracias a todas las novedades que incluye este PEP ahora es mucho más fácil y cómodo trabajar
+con genéricos.</aside></section>
+</section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-692-utilizar-typeddict-para-anotar-los-kwargs">
+<h2><strong>PEP 692</strong>: utilizar <code class="docutils literal notranslate"><span class="pre">TypedDict</span></code> para anotar los <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code></h2>
+<pre data-id="pep-692-utilizar-typeddict-para-anotar-los-kwargs"><code data-trim data-noescape class="python" data-line-numbers="1-8|7-8|7|3-5">from typing import TypedDict, Unpack
+
+class Movie(TypedDict):
+    name: str
+    year: int
+
+def foo(**kwargs: Unpack[Movie]):
+    ...</code></pre>
+<aside class="notes">Ahora vamos con mi mejora favorita en el typing. (1) Seguro que muchos habéis tenido una función que recibe
+un montón de parámetros, quedando un código muy feo. (2) Para solucionarlo, se suelen utilizar los kwargs, pero
+estos no se podían tipar. (3) Ahora, con esta nueva sintaxis, podemos tiparlo mediante un TypedDict. Esto tiene
+muchas más ventajas, como poder reutilizar el tipado en otras funciones que recibe los mismos parámetros.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-698-decorador-override-para-indicar-metodos-que-sobrescriben">
+<h2><strong>PEP 698</strong>: decorador <code class="docutils literal notranslate"><span class="pre">&#64;override</span></code> para indicar métodos que sobrescriben</h2>
+<pre data-id="pep-698-decorador-override-para-indicar-metodos-que-sobrescriben"><code data-trim data-noescape class="python" data-line-numbers="1-15|4-5|8-10|13-15">from typing import override
+
+class Base:
+    def get_color(self) -&gt; str:
+        return &quot;blue&quot;
+
+class GoodChild(Base):
+    &#64;override  # ok: overrides Base.get_color
+    def get_color(self) -&gt; str:
+        return &quot;yellow&quot;
+
+class BadChild(Base):
+    &#64;override  # type checker error: does not override Base.get_color
+    def get_colour(self) -&gt; str:
+        return &quot;red&quot;</code></pre>
+<aside class="notes">Este nuevo decorador es para los muy puristas. (1) Imaginad que tenemos un método ya definido, que no es obligatorio
+de sobrescribir. (2) El nuevo decorador override nos permite indicar que estamos sobrescribiendo un método de la
+clase padre. (3) Si no lo estamos sobrescribiendo, ya sea porque lo hemos escrito mal o porque el método sobrescrito
+ya no existe, nos avisará de ello.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="otras-mejoras">
+<h2>Otras <strong>mejoras</strong></h2>
+<a class="reference internal image-reference" href="_images/improvements.gif"><img alt="_images/improvements.gif" class="align-center" src="_images/improvements.gif" style="width: 60%;" /></a>
+<aside class="notes">Ahora vamos a pasar a comentar otras mejoras, las cuales no veremos inmediatamente escribiendo código, pero que son
+también muy importantes.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-684-implementar-un-gil-por-cada-sub-interprete">
+<h2><strong>PEP 684</strong>: implementar un <strong>GIL</strong> por cada <strong>sub-interprete</strong></h2>
+<aside class="notes">La primera de ellas es la implementación de un GIL por cada sub-interprete. De momento sólo está disponible en la
+API de C, pero es sólo un anticipo de lo que llegará en Python3.13, pudiendo usarlo desde Python. Esto es muy
+relevante porque nos permitirá aprovechar múltiples núcleos en programas con varios sub-interpretes.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-669-reducir-el-impacto-de-la-monitorizacion-en-cpython">
+<h2><strong>PEP 669</strong>: Reducir el impacto de la <strong>monitorización</strong> en <strong>CPython</strong></h2>
+<aside class="notes">Otra importante mejora es la aparición de una nueva API para monitorizar Python. Los nuevos profilers, debuggers y
+otras herramientas que monitoricen eventos en CPython, podrán aprovechar esta nueva API para cubrir un amplio
+rango de eventos en el intérprete, con un impacto menor en el rendimiento y aplicándose sólo cuando sea necesario.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="soporte-para-el-profiler-perf-de-linux">
+<h2>Soporte para el profiler <code class="docutils literal notranslate"><span class="pre">perf</span></code> de Linux</h2>
+<pre data-id="soporte-para-el-profiler-perf-de-linux"><code data-trim data-noescape class="bash">$ python -X perf script.py
+$ perf report -g -i perf.data</code></pre>
+<aside class="notes">Esta mejora es sólo para los usuarios de Linux. Perf es el profiler del Kernel de Linux, y aunque es genial para
+monitorizar el rendimiento de aplicaciones, en Python al usarlo sólo se podían ver los símbolos nativos del
+intérprete, no los de nuestro programa. Ahora, si lo activamos, podemos ver lo que sucede en nuestra aplicación.
+Si os interesa saber más sobre el tema, el autor de este cambio, Pablo Galindo, tiene una charla sobre el tema
+en la PyConES de este año, la cual se lanzará próximamente en vídeo.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-688-expuesto-el-protocolo-del-buffer-en-python">
+<h2><strong>PEP 688</strong>: Expuesto el protocolo del <strong>buffer</strong> en Python</h2>
+<pre data-id="pep-688-expuesto-el-protocolo-del-buffer-en-python"><code data-trim data-noescape class="python" data-line-numbers="1-10|6-7|9-10|1-10"> class MyBuffer:
+     def __init__(self, data: bytes):
+         self.data = bytearray(data)
+         self.view = None
+
+     def __buffer__(self, flags: int) -&gt; memoryview:
+         ...
+
+     def __release_buffer__(self, view: memoryview) -&gt; None:
+         ...</code></pre>
+<aside class="notes">Python ofrecía hasta ahora un protocolo para el buffer, pero sólo disponible si hacíamos una extensión en C. Este
+protocolo nos permitía leer y liberar un buffer de memoria, estando ahora también disponible en el propio Python.
+(1) Para ello nos ofrece un nuevo método mágico buffer, que nos permite obtener una vista de memoria de nuestro
+objeto. (2) Y otro método mágico para liberar el buffer. (3) Esto es muy útil para trabajar con datos binarios,
+como por ejemplo en el caso de la criptografía.</aside></section>
+<section data-background-color="#2b5b84" data-background-gradient="linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)" id="pep-632-eliminado-paquete-distutils">
+<h2><strong>PEP 632</strong>: eliminado paquete <code class="docutils literal notranslate"><span class="pre">distutils</span></code></h2>
+<aside class="notes">Y para terminar, tenemos que decir adiós a distutils, un módulo que llevaba con nosotros desde tiempos
+inmemorables, y que ahora ha sido eliminado. Su eliminación es algo que se ha ido retrasando, por el gran número
+de paquetes que lo usaban. No obstante, si lo seguís necesitando, sigue estando disponible a través de
+setuptools.</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="cual-es-vuestra-mejora-favorita">
+<h2>¿Cuál es vuestra <strong>mejora favorita</strong>?</h2>
+<aside class="notes">Y con esto terminamos. ¿Cuál es vuestra mejora favorita? Me gustaría poder escuchar vuestras opiniones.</aside></section>
+<section>
+<section data-background-gradient="linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);" id="muchas-gracias-a-todos">
+<h2>¡Muchas gracias a todos!</h2>
+<aside class="notes">¡Muchas gracias a todos!</aside></section>
+<section data-background-color="#ffffff" data-background-image="_static/grid-bg.png" data-background-repeat="repeat-x" data-background-position="left top" data-background-size="auto" data-transition="zoom" id="contactar">
+<h3><strong>Contactar</strong></h3>
+<ul class="simple">
+<li><p>🌐 <strong>Sitio web:</strong> <a class="reference external" href="https://nekmo.com">nekmo.com</a></p></li>
+<li><p>📫 <strong>Email:</strong> <a class="reference external" href="mailto:contacto&#37;&#52;&#48;nekmo&#46;com">contacto<span>&#64;</span>nekmo<span>&#46;</span>com</a></p></li>
+<li><p>🐦 <strong>Twitter:</strong> <a class="reference external" href="https://twitter.com/nekmocom">&#64;nekmocom</a></p></li>
+<li><p>📱 <strong>Telegram:</strong> <a class="reference external" href="https://t.me/nekmo">&#64;nekmo</a></p></li>
+<li><p>💡 <strong>Jabber:</strong> <a class="reference external" href="xmpp://nekmo&#64;nekmo.org">nekmo&#64;nekmo.org</a></p></li>
+</ul>
+<aside class="notes">Aquí tenéis mi contacto si queréis contactar conmigo.</aside></section>
+</section>
+
+        </div>
+    </div>
+    
+    <script src="_static/revealjs4/dist/reveal.js"></script>
+    
+    
+      <script src="_static/revealjs4/plugin/notes/notes.js"></script>
+      <script src="_static/revealjs4/plugin/highlight/highlight.js"></script>
+      
+    
+    <script>
+        var revealjsConfig = new Object();
+        Object.assign(revealjsConfig, 
+    {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        margin: 0.2,        
+        transition: "slide",
+    }
+);
+        
+        
+        
+          revealjsConfig.plugins = [
+            RevealNotes,RevealHighlight,
+          ];
+        
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(revealjsConfig);
+    </script>
+
+  </body>
+</html>
