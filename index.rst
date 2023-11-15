@@ -195,7 +195,7 @@ https://github.com/faster-cpython/benchmarking-public
 
 .. revealjs-notes::
 
-    Tenéis todos os datos en el enlace en pantalla. Y no, me temo que no puedo responder qué pasó con la versión de
+    Tenéis todos los datos en el enlace en pantalla. Y no, me temo que no puedo responder qué pasó con la versión de
     Windows para que subiese tanto.
 
 
@@ -648,6 +648,28 @@ Creación de funciones **genéricas**
 
 
 
+Genéricos fácil
+---------------
+
+.. revealjs-section::
+    :data-background-color: #ffffff
+    :data-background-image: _static/grid-bg.png
+    :data-background-repeat: repeat-x
+    :data-background-position: left top
+    :data-background-size: auto
+    :data-transition: zoom
+
+.. image:: images/too-easy.*
+   :width: 80%
+   :align: center
+
+.. revealjs-notes::
+
+    Como podéis ver, gracias a todas las novedades que incluye este PEP ahora es mucho más fácil y cómodo trabajar
+    con genéricos.
+
+
+
 **PEP 692**: utilizar ``TypedDict`` para anotar los ``**kwargs``
 ================================================================
 
@@ -722,6 +744,10 @@ Otras **mejoras**
     :data-background-size: auto
     :data-transition: zoom
 
+.. image:: images/improvements.*
+   :width: 60%
+   :align: center
+
 .. revealjs-notes::
 
     Ahora vamos a pasar a comentar otras mejoras, las cuales no veremos inmediatamente escribiendo código, pero que son
@@ -790,7 +816,7 @@ Soporte para el profiler ``perf`` de Linux
     :data-background-gradient: linear-gradient(180deg, rgba(10,59,102,1) 0%, rgba(43,91,132,1) 30%)
 
 .. revealjs-code-block:: python
-   :data-line-numbers: 1-10|6-7|9-10
+   :data-line-numbers: 1-10|6-7|9-10|1-10
 
     class MyBuffer:
         def __init__(self, data: bytes):
@@ -807,7 +833,7 @@ Soporte para el profiler ``perf`` de Linux
 .. revealjs-notes::
 
     Python ofrecía hasta ahora un protocolo para el buffer, pero sólo disponible si hacíamos una extensión en C. Este
-    protocolo nos permitíaleer y liberar un buffer de memoria, estando ahora también disponible en el propio Python.
+    protocolo nos permitía leer y liberar un buffer de memoria, estando ahora también disponible en el propio Python.
     (1) Para ello nos ofrece un nuevo método mágico buffer, que nos permite obtener una vista de memoria de nuestro
     objeto. (2) Y otro método mágico para liberar el buffer. (3) Esto es muy útil para trabajar con datos binarios,
     como por ejemplo en el caso de la criptografía.

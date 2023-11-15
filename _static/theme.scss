@@ -237,7 +237,7 @@ ul li {
 }
 
 /* Hidden titles */
-#python-3-13, #python-mas-rapido, #comparativa-velocidad, #saltar-por-la-ventana {
+#python-3-13, #python-mas-rapido, #comparativa-velocidad, #saltar-por-la-ventana, #genericos-facil {
   h1, h2, h3 {
     display: none;
   }
@@ -394,13 +394,6 @@ ul li {
   }
 }
 
-#muchas-gracias-a-todos {
-  h2 {
-    color: white;
-    font-family: 'Kalam', cursive;
-  }
-}
-
 #sintaxerror-tal-vez-quisiste-usar-from-import {
   em {
     display: inline-block;
@@ -446,6 +439,14 @@ ul li {
 #pep-698-decorador-override-para-indicar-metodos-que-sobrescriben {
   h2 {
     font-size: 2em;
+  }
+}
+
+#muchas-gracias-a-todos {
+  h2 {
+    color: white;
+    font-family: 'Kalam', cursive;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
   }
 }
 
