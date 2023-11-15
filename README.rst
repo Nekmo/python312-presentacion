@@ -12,7 +12,7 @@
 ¿Qué hay de nuevo en Python 3.12?
 =================================
 
-Presentación para `Python Málaga <https://www.meetup.com/es-ES/python_malaga/>`_ el día 16 de noviembre de 2022. Puedes
+Presentación para `Python Málaga <https://www.meetup.com/es-ES/python_malaga/>`_ el día 16 de noviembre de 2023. Puedes
 utilizar esta misma presentación, íntegra o con modificaciones para cualquiera de los usos descritos en la licencia
 MIT adjunta en este proyecto.
 
